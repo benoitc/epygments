@@ -1,0 +1,15 @@
+{application, epygments,
+    [
+    {description, ""},
+    {vsn, "1"},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib
+            ]},
+    {mod, { epygments_app, []}},
+    {env, [{pools, [
+        {hpool, [
+            {size, 10},
+            {max_overflow, 20}]}]}]}
+    ]}.
