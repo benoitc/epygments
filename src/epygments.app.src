@@ -6,7 +6,7 @@
 {application, epygments,
     [
     {description, "simple wrapper to Pygments."},
-    {vsn, "1"},
+    {vsn, "0.1"},
     {registered, []},
     {applications, [
         kernel,
