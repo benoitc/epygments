@@ -6,7 +6,6 @@
 
 from erlport import Port, Protocol, String
 from pygments import highlight, lexers, formatters
-import json
 
 class SimpleFormatter(formatters.HtmlFormatter):
         def wrap(self, source, outfile):
