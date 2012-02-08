@@ -27,6 +27,12 @@ handle_call(all_languages, _From, #state{port=Port}=State) ->
     {ok, Resp} = exec(Port, all_languages),
     {reply, Resp, State};
 
+handle_call({highlight, Code, LexerName, FormatterName, Options},
+        _From, #state{port=Port}=State) ->
+    {ok, Resp} = exec(Port, {highlight, Code, LexerName, FormatterName,
+            Options}),
+    {reply, Resp, State};
+
 handle_call(_Msg, _From, State) ->
     {reply, ok, State}.
 
@@ -63,5 +69,4 @@ exec(Port, Cmd) ->
     after 5000 ->
         {error, timeout}
     end.
-
 
