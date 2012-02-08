@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -
+#
+# This file is part of epygments available under the public domain or
+# MIT license. See the NOTICE for more information.
+
+
 from erlport import Port, Protocol, String
 from pygments import highlight, lexers, formatters
 import json

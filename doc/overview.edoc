@@ -1,0 +1,4 @@
+@author Benoiît Chesneau <benoitc@e-engura.org>
+@copyright 2012 Benoit Chesneau
+@version HEAD
+@title Simple wrapper to Pygments - prettify source code in Erlang.

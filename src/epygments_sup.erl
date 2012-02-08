@@ -1,3 +1,7 @@
+%%% -*- erlang -*-
+%%%
+%%* This file is part of epygments available under the public domain or
+%%% MIT license. See the NOTICE for more information.
 
 -module(epygments_sup).
 
